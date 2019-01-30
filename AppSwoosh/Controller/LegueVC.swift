@@ -9,26 +9,34 @@
 import UIKit
 
 class LegueVC: UIViewController {
+    var player :Player!
 
+    @IBAction func onMenTapped(_ sender: Any) {
+        player.desgiredLegue = "mens"
+     
+    }
     
+    @IBAction func onWemenTapped(_ sender: Any) {
+    }
+    
+    @IBAction func onCoedTapped(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        player = Player()
 
         // Do any additional setup after loading the view.
     }
     @IBAction func onNextTapped(_ sender: Any) {
         performSegue(withIdentifier: "skillVCSegue", sender: self)
     }
+    func selectLEgue(legueType : String){
+        player.desgiredLegue = legueType
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+
 
 }
+
+
+

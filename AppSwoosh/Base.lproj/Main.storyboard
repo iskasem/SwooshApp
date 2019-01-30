@@ -115,6 +115,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMenTapped:" destination="Ntc-3J-IPU" eventType="touchUpInside" id="yF8-sO-q2L"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hv-sT-Zj1" customClass="BorderButton" customModule="AppSwoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="73" width="355" height="56"/>
@@ -126,6 +129,9 @@
                                         <state key="normal" title="Wemens">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWemenTapped:" destination="Ntc-3J-IPU" eventType="touchUpInside" id="RWa-M1-uOe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H4Z-cr-1ca" customClass="BorderButton" customModule="AppSwoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="146" width="355" height="56"/>
@@ -137,12 +143,18 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="Ntc-3J-IPU" eventType="touchUpInside" id="0Yv-GR-hNA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iW-aL-xGC" customClass="BorderButton" customModule="AppSwoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iW-aL-xGC" userLabel="NextBtn" customClass="BorderButton" customModule="AppSwoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="582" width="343" height="56"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" label="nxtBtn">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="ouE-NW-kIi"/>
                                 </constraints>
